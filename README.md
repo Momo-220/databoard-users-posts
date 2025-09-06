@@ -6,8 +6,8 @@ A full-stack web application for managing users and their posts. Built with mode
 
 ## 🚀 Live Demo
 
-- **Frontend**: [Deployed on Vercel](https://your-frontend.vercel.app)
-- **Backend API**: [Deployed on Render](https://your-backend.onrender.com)
+- **Frontend**: [https://databoardusersposts.vercel.app/](https://databoardusersposts.vercel.app/)
+- **Backend API**: [https://databoard-users-posts.onrender.com/api](https://databoard-users-posts.onrender.com/api)
 
 ## 📋 Project Overview
 
