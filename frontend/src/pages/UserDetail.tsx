@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { User, Post } from '../types';
 import { userService } from '../services/userService';
 import { PostList } from '../components/PostList';
-import { PostForm } from '../components/PostForm';
+// import { PostForm } from '../components/PostForm';
 import { ArrowLeft, Mail, User as UserIcon, Calendar, Plus, AlertCircle, X } from 'lucide-react';
 
 export function UserDetail() {
@@ -69,7 +69,7 @@ export function UserDetail() {
     }
   };
 
-  const handleEditPost = (post: Post) => {
+  const handleEditPost = (_post: Post) => {
     // For now, we'll just show an alert since we don't have edit functionality for posts in user detail
     alert('Edit functionality will be implemented in the posts page.');
   };

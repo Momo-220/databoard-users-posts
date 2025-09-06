@@ -32,10 +32,10 @@ export function UsersPage() {
     loadUsers();
   }, []);
 
-  const handleCreateUser = async (userData: CreateUserData) => {
+  const handleCreateUser = async (userData: CreateUserData | UpdateUserData) => {
     try {
       setIsSubmitting(true);
-      const newUser = await userService.createUser(userData);
+      const newUser = await userService.createUser(userData as CreateUserData);
       setUsers(prev => [...prev, newUser]);
       setIsFormOpen(false);
     } catch (err) {

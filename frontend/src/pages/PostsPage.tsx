@@ -39,10 +39,10 @@ export function PostsPage() {
     loadData();
   }, []);
 
-  const handleCreatePost = async (postData: CreatePostData) => {
+  const handleCreatePost = async (postData: CreatePostData | UpdatePostData) => {
     try {
       setIsSubmitting(true);
-      const newPost = await postService.createPost(postData);
+      const newPost = await postService.createPost(postData as CreatePostData);
       setPosts(prev => [...prev, newPost]);
       setIsFormOpen(false);
     } catch (err) {
